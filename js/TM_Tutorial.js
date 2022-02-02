@@ -27,7 +27,7 @@ async function connect() {
         //check if user is authenticated; if not, redirect to login page
 		if(response.status===401){
             const url = new URL(`${urlQlikServer}/login`);
-            url.searchParams.append('returnto', 'http://localhost/ThomasMoreTutorial/TM_Tutorial.html');
+            url.searchParams.append('returnto', '52.178.177.32');
             url.searchParams.append('qlik-web-integration-id', webIntegrationId);
             window.location.href = url;
         }
